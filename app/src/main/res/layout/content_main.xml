@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/background_logo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relLay">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:background="@drawable/todo_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:textColor="@color/DayTextColor"
+            android:textSize="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp45"
+            android:id="@+id/bannerDay"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 April"
+            android:textColor="@color/DayTextColor"
+            android:textSize="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_below="@id/bannerDay"
+            android:id="@+id/bannerDate"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/task_list">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
